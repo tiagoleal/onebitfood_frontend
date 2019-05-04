@@ -1,5 +1,3 @@
-
-Default
 import React, {Component} from 'react';
 import { Column } from "rbx";
 import { connect } from 'react-redux';
