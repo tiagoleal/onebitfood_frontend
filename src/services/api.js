@@ -7,5 +7,8 @@ export default {
     let filter = category ? `?category=${category.title}` : ""
     return url.get(`/restaurants${filter}`)
   },
+
+  searchRestaurants: (search) => url.get(`/restaurants/search?search_name=${search}`),
+
   loadCategories: () => url.get("/categories")
 }
