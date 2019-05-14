@@ -6,6 +6,7 @@ import Restaurants from './screens/restaurants';
 import ShowRestaurant from './screens/show_restaurant'
 import history from "./history";
 import CreateOrder from "./screens/create_order";
+import ShowOrder from "./screens/show_order";
 
 
 const Routes = () => (
@@ -15,6 +16,7 @@ const Routes = () => (
       <Route exact path='/restaurants' component={Restaurants} />
       <Route exact path='/restaurants/:id' component={ShowRestaurant} />
       <Route exact path='/orders/new' component={CreateOrder} />
+      <Route exact path='/orders/:id' component={ShowOrder} />
     </Switch>
   </Router>
 )
